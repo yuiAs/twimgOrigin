@@ -1,0 +1,97 @@
+[
+  {
+    "id": 41,
+    "priority": 141,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://pbs.twimg.com/media/\\1.\\2:orig"
+      }
+    },
+    "condition": {
+      "regexFilter": "https://pbs\\.twimg\\.com/media/([^\\.]+)(?:\\.?.{0,3})(?:.+?)(?:format\\=)(.+)(?:.+?)(?:name\\=)(?:120x120|900x900)",
+      "requestMethods": [
+        "get"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "priority": 130,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://pbs.twimg.com/media/\\1.\\2:orig"
+      }
+    },
+    "condition": {
+      "regexFilter": "https://pbs\\.twimg\\.com/media/([^\\.]+)(?:\\.?.{0,3})(?:.+?)(?:format\\=)(.+)(?:.+?)(?:name\\=)(?:large|medium)",
+      "requestMethods": [
+        "get"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "priority": 130,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://pbs.twimg.com/media/\\1.\\2:orig"
+      }
+    },
+    "condition": {
+      "regexFilter": "https://pbs\\.twimg\\.com/media/([^\\.]+)(?:\\.?.{0,3})(?:.+?)(?:format\\=)(.+)(?:.+?)(?:name\\=)(?:[0-9]{4,}x[0-9]{4,})",
+      "requestMethods": [
+        "get"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "priority": 130,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://pbs.twimg.com/media/\\1.\\2:\\3"
+      }
+    },
+    "condition": {
+      "regexFilter": "https://pbs\\.twimg\\.com/media/([^\\.]+)(?:\\.?.{0,3})(?:.+?)(?:format\\=)(.+)(?:.+?)(?:name\\=)(.+)",
+      "requestMethods": [
+        "get"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "priority": 100,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://pbs.twimg.com/media/\\1.\\2:orig"
+      }
+    },
+    "condition": {
+      "regexFilter": "https://pbs\\.twimg\\.com/media/([^\\.]+)(?:\\.?.{0,3})(?:.+?)(?:format\\=)(.+)$",
+      "requestMethods": [
+        "get"
+      ],
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  }
+]

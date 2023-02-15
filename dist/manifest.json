@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "twimgOrigin",
+  "version": "0.2.0",
+  "description": "Always refer to the original image",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://twitter.com/",
+    "*://*.twitter.com/",
+    "*://pbs.twimg.com/"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }
+}
